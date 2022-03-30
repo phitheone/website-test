@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=ZCOOL+QingKe+HuangYou&display=swap");
+body {
+  background-color: #100a31;
+  color: white;
+}
+
+.app {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.socials {
+  width: 3em;
+  height: 3em;
+}
+
+.navbar,
+.footer,
+.contenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contenido {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'ZCOOL KuaiLe', cursive;
+  font-weight: bolder;
+  font-size: x-large;
+  letter-spacing: 2px;
+  /*
+    background-image: url(../images/stars.png);
+    background-size: cover;
+    background-position: center;
+    */
+}
+
+.random-lizzard {
+  max-width: 20em;
+  position: absolute;
+  top: 20%;
+}
+
+.soon {
+  top: -4em;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  position: relative;
+  color: gray;
+}
+
+#star-id {
+  width: 50em;
+  z-index: -1;
+  position: relative;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  opacity: 0.01;
+}
+
+.random-lizzard:hover ~ .soon {
+  -webkit-transform: scale(150%);
+          transform: scale(150%);
+  color: greenyellow;
+}
+
+#lizzard-id:hover + #star-id {
+  -webkit-transform: scale(110%);
+          transform: scale(110%);
+  opacity: 1;
+}
+
+/*
+@keyframes por-defecto{
+    100%{
+        transform: rotate(0deg) scale(100%);
+    }
+}
+*/
+/*
+@keyframes giro{
+    0%{
+        transform: rotate(0deg) scale(100%);
+        //opacity: 1;
+    }
+    50%{
+        transform: rotate(-180deg) scale(150%);
+        //opacity: 0.2;
+    }
+    100%{
+        transform: rotate(-360deg) scale(100%);
+        //opacity: 1;
+    }
+}
+*/
+.navbar {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 3em;
+}
+
+.footer {
+  padding: 1em;
+  gap: 1em;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+img {
+  height: auto;
+  width: 100%;
+  display: block;
+}
+
+.logo {
+  width: 15em;
+}
+/*# sourceMappingURL=main.css.map */
